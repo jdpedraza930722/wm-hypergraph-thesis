@@ -1,3 +1,8 @@
+"""
+Evaluador de Métricas.
+Contiene las fórmulas estadísticas para medir la Precisión Inferencial, 
+Preservación Contextual y Fragmentación Relacional de la memoria.
+"""
 class Evaluator:
     @staticmethod
     def calculate_precision(recovered: list, original: list) -> float:

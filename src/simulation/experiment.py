@@ -1,3 +1,8 @@
+"""
+Controlador de la Simulación Experimental.
+Maneja las iteraciones, la inyección de la semilla aleatoria, la recolección de datos
+y la exportación de resultados a formatos CSV, JSON y reportes de texto.
+"""
 import json
 import pandas as pd
 from scenarios.definitions import get_all_scenarios

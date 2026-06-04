@@ -1,3 +1,7 @@
+"""
+Módulo principal (Punto de entrada).
+Orquesta la ejecución de la simulación, guarda los resultados y genera las gráficas.
+"""
 import os
 from src.simulation.experiment import Experiment
 from src.visualization.plotter import Plotter

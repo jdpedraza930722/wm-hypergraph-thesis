@@ -1,3 +1,8 @@
+"""
+Motor de Activación (Activation Engine).
+Implementa el mecanismo de propagación de energía cognitiva utilizando el "Efecto Abanico" (Fan Effect).
+Aplica exactamente las mismas reglas matemáticas para Grafos Binarios e Hipergrafos.
+"""
 import random
 from src.graph.binary_graph import BinaryGraph
 from src.hypergraph.hyper_graph import HyperGraph

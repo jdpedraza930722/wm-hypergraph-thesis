@@ -1,3 +1,8 @@
+"""
+Módulo de Visualización.
+Toma los datos tabulares del experimento y utiliza Matplotlib para generar 
+gráficas de barras comparativas (Hipergrafo vs Grafo Binario).
+"""
 import pandas as pd
 # pyrefly: ignore [missing-import]
 import matplotlib.pyplot as plt

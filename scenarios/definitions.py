@@ -1,3 +1,7 @@
+"""
+Definición de los escenarios de estudio (E1 a E4).
+Configura las topologías de Grafos Binarios e Hipergrafos para simular relaciones de Aridad 2 a 5.
+"""
 from src.graph.binary_graph import BinaryGraph
 from src.hypergraph.hyper_graph import HyperGraph
 from src.memory.active_structure import ActiveStructure
