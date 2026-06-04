@@ -66,9 +66,9 @@ Para probar matemáticamente que el grafo binario colapsa ante la complejidad mi
 * **E3 (Aridad 4):** *"Juan estudia Matemáticas con un Profesor en el Aula 5"*.
   * *Entidades:* `{Juan, Matemáticas, Profesor, Aula 5}`.
   * *Por qué se usa:* Introduce contexto espacial profundo. Aquí la red binaria se vuelve densa y el "Efecto Abanico" obliga a dividir la energía severamente, marcando el punto de quiebre donde la memoria convencional empieza a fallar.
-* **E4 (Aridad 5 - El Caso Crítico):** *"Juan estudia Matemáticas con el Profesor García en el Aula 5 usando Álgebra Moderna"*.
+* **E4 (Aridad 5 - El Caso Crítico y Límite Biológico):** *"Juan estudia Matemáticas con el Profesor García en el Aula 5 usando Álgebra Moderna"*.
   * *Entidades:* `{Juan, Matemáticas, Profesor García, Aula 5, Álgebra Moderna}`.
-  * *Por qué se usa:* Es la prueba de fuego de las relaciones N-arias. Demuestra una memoria episódica humana, rica en detalles interconectados. El objetivo de este escenario es comprobar si la estructura es capaz de sostener los 5 elementos en la memoria de trabajo de forma simultánea sin fragmentarse cuando se dispara la activación desde un solo estímulo (ej. preguntar por "Juan").
+  * *Por qué se usa:* Este límite de 5 entidades no es arbitrario. La psicología cognitiva y las neurociencias (apoyándose en los estudios de Nelson Cowan sobre el límite de *4±1 chunks*) demuestran que la capacidad máxima de la memoria de trabajo humana ronda los 5 elementos de información simultáneos. Al forzar la aridad a 5, sometemos a la arquitectura a operar exactamente en el umbral biológico máximo del cerebro humano para observar si la representación hipergráfica resiste sin fragmentarse.
 
 ---
 
@@ -109,7 +109,7 @@ Para replicar este experimento en cualquier computadora, sigue estos pasos:
    ```bash
    python main.py
    ```
-Una vez que finalice, la terminal te confirmará la creación de la carpeta `outputs/` con los resultados.
+Una vez que finalice, la terminal te confirmará la creación de la carpeta `outputs/`. Allí no solo encontrarás los datos crudos y las gráficas, sino también una tabla estadística preprocesada (`summary_stats.csv`) y un reporte de texto (`summary_report.txt`) diseñados para que copies los promedios directos a tu tesis.
 
 ---
 
