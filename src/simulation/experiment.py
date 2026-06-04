@@ -72,10 +72,28 @@ class Experiment:
         import os
         os.makedirs(output_dir, exist_ok=True)
         
-        # Save CSV
+        # Save CSV (Datos Crudos)
         df = pd.DataFrame(self.results)
         df.to_csv(os.path.join(output_dir, "results.csv"), index=False)
         
+        # Generar Reporte Resumen (Promedios)
+        summary_df = df.groupby(['scenario', 'model'])[['precision', 'context', 'fragmentation']].mean().reset_index()
+        summary_df.to_csv(os.path.join(output_dir, "summary_stats.csv"), index=False)
+        
+        # Crear un reporte de texto legible para humanos
+        with open(os.path.join(output_dir, "summary_report.txt"), "w", encoding="utf-8") as f:
+            f.write("REPORTE ESTADÍSTICO PROMEDIO (100 Iteraciones)\n")
+            f.write("==============================================\n\n")
+            for scenario in ['E1', 'E2', 'E3', 'E4']:
+                f.write(f"--- Escenario {scenario} ---\n")
+                scenario_data = summary_df[summary_df['scenario'] == scenario]
+                for _, row in scenario_data.iterrows():
+                    f.write(f"Modelo: {row['model']}\n")
+                    f.write(f"  - Precisión Inferencial:    {row['precision']:.4f}\n")
+                    f.write(f"  - Preservación Contextual:  {row['context']:.4f}\n")
+                    f.write(f"  - Fragmentación Relacional: {row['fragmentation']:.4f}\n")
+                f.write("\n")
+
         # Save JSON
         with open(os.path.join(output_dir, "results.json"), "w", encoding="utf-8") as f:
             json.dump({

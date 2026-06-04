@@ -1,0 +1,43 @@
+REPORTE ESTADÍSTICO PROMEDIO (100 Iteraciones)
+==============================================
+
+--- Escenario E1 ---
+Modelo: BinaryGraph
+  - Precisión Inferencial:    1.0000
+  - Preservación Contextual:  1.0000
+  - Fragmentación Relacional: 0.0000
+Modelo: HyperGraph
+  - Precisión Inferencial:    1.0000
+  - Preservación Contextual:  1.0000
+  - Fragmentación Relacional: 0.0000
+
+--- Escenario E2 ---
+Modelo: BinaryGraph
+  - Precisión Inferencial:    0.3333
+  - Preservación Contextual:  0.0000
+  - Fragmentación Relacional: 1.0000
+Modelo: HyperGraph
+  - Precisión Inferencial:    1.0000
+  - Preservación Contextual:  1.0000
+  - Fragmentación Relacional: 0.0000
+
+--- Escenario E3 ---
+Modelo: BinaryGraph
+  - Precisión Inferencial:    0.2500
+  - Preservación Contextual:  0.0000
+  - Fragmentación Relacional: 1.0000
+Modelo: HyperGraph
+  - Precisión Inferencial:    1.0000
+  - Preservación Contextual:  1.0000
+  - Fragmentación Relacional: 0.0000
+
+--- Escenario E4 ---
+Modelo: BinaryGraph
+  - Precisión Inferencial:    0.2000
+  - Preservación Contextual:  0.0000
+  - Fragmentación Relacional: 1.0000
+Modelo: HyperGraph
+  - Precisión Inferencial:    1.0000
+  - Preservación Contextual:  1.0000
+  - Fragmentación Relacional: 0.0000
+
